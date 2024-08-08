@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Comic Style</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./images/albums/free-vector-realistic-comic-3d-text-effect_682335-462.avif" alt="Comic Style Logo" class="logo">
+            <h1><i>Comic Style</i></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="catalogue" class="container">
+            <h2>Catalogue des Bandes Dessinées</h2>
+            <div class="filters">
+                <form>
+                    <input type="text" id="search-title" placeholder="Recherche par titre...">
+                    <select id="filter-author">
+                        <option value="">Tous les auteurs</option>
+                        <option value="Auteur 1">Auteur 1</option>
+                        <option value="Auteur 2">Auteur 2</option>
+                        <option value="Auteur 3">Auteur 3</option>
+                    </select>
+                    <select id="filter-series">
+                        <option value="">Toutes les séries</option>
+                        <option value="Série 1">Série 1</option>
+                        <option value="Série 2">Série 2</option>
+                        <option value="Série 3">Série 3</option>
+                    </select>
+                    <button type="button" onclick="applyFilters()">Filtrer</button>
+                </form>
+            </div>
+            <div class="bd-list">
+                <article class="bd-item" data-author="Auteur 1" data-series="Série 1" data-title="Titre de la BD 1">
+                    <a href="details.html">
+                        <img src="images/Blacksad-01-Quelque part entre les ombres.jpg" alt="BD 1">
+                        <h3>Titre de la BD 1</h3>
+                        <p>Auteur: Auteur 1</p>
+                        <p>Prix: 10€</p>
+                        <button>Ajouter au panier</button>
+                    </a>
+                    <!-- <button>Ajouter au panier</button> -->
+                </article>
+                <article class="bd-item" data-author="Auteur 2" data-series="Série 2" data-title="Titre de la BD 2">
+                    <a href="details.html">
+                        <img src="images/Blake et Mortimer-06-La marque jaune.jpg" alt="BD 2">
+                        <h3>Titre de la BD 2</h3>
+                        <p>Auteur: Auteur 2</p>
+                        <p>Prix: 12€</p>
+                        <button>Ajouter au panier</button>
+                    </a>
+                    <!-- <button>Ajouter au panier</button> -->
+                </article>
+                <article class="bd-item" data-author="Auteur 3" data-series="Série 3" data-title="Titre de la BD 3">
+                    <a href="details.html">
+                        <img src="images/Blueberry-02-Lhomme à létoile dargent.jpg" alt="BD 3">
+                        <h3>Titre de la BD 3</h3>
+                        <p>Auteur: Auteur 3</p>
+                        <p>Prix: 15€</p>
+                        <button>Ajouter au panier</button>
+                    </a>
+                    <!-- <button>Ajouter au panier</button> -->
+                </article>
+                <!-- Ajoutez plus de BD ici -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2022 Comic Style. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
